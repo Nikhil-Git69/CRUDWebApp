@@ -2,23 +2,25 @@
 using System.ComponentModel.DataAnnotations;
 
 
-namespace CRUDAPPMVC.Models
+using CRUDAPPMVC.Models;
+namespace CRUDAPPMVC.Models;
+
+public class Customer
 {
-    public class Customer
-    {
-        public Guid Id { get; set; }
+    public Guid Id { get; set; }
 
- 
-        public string Name { get; set; }
+    [Required]
+    public string Name { get; set; }
 
-     
-        public string Address { get; set; }
+    [Required]
+    public string Address { get; set; }
 
-        public string Gender { get; set; }
+    [Required]
+    public string Gender { get; set; }
 
-    
-        public string Mobile { get; set; }
+    [Required]
+    public string Mobile { get; set; }
 
-        public string Email { get; set; }
-    }
+    [Required]
+    public string Email { get; set; }
 }
